@@ -75,7 +75,7 @@ $(BUILD)/lib/librpitx.a: $(BUILD) $(SRC_TOP)/.patched
 	mkdir -p $(BUILD)/lib
 	cp $(LIBRPITX_SRC)/src/librpitx.a $(BUILD)/lib
 	mkdir -p $(BUILD)/include/librpitx/src
-	cp $(LIBRPITX_SRC)/src/*.h $(BUILD)/include/librpitx/src
+	cp $(LIBRPITX_SRC)/src/*.h $(BUILD)/include/librpitx
 
 fake_install: $(PREFIX)
 	printf "#!/bin/sh\nexit 0\n" > $(PREFIX)/sendiq
